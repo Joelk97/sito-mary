@@ -11,8 +11,12 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import Footer from "../components/Footer";
+import sanityCli from "../components/sanityCli";
+import client from "../components/sanityCli";
 
-export default function Home() {
+const queryHome = `*[_type == "homePage"][0]`;
+
+export default function Home({ homeElements }) {
   const { locale, locales, asPath } = useRouter();
   const form = useRef();
   const [name, setName] = useState("");
@@ -46,8 +50,8 @@ export default function Home() {
               />
             </div>
             <div className={styles.textHeader}>
-              <h1>Danza e pilates</h1>
-              <h2>con Marylin</h2>
+              <h1>{homeElements.title1?.[locale]}</h1>
+              <h2>{homeElements.title2?.[locale]}</h2>
             </div>
           </div>
         </section>
@@ -138,4 +142,13 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const homeElements = await sanityCli.fetch(queryHome);
+  return {
+    props: {
+      homeElements,
+    },
+  };
 }

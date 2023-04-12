@@ -23,8 +23,16 @@ const Navbar = (props) => {
                   <span>{el.chisono}</span>
                 </Link>
               )}
-              <span>{el.attivitaeworkshop}</span>
-              <span>{el.contatto}</span>
+              {!props.attivita && (
+                <Link className={styles.link} href={`/attivita-workshop`}>
+                  <span>{el.attivitaeworkshop}</span>
+                </Link>
+              )}
+              {!props.contatto && (
+                <Link className={styles.link} href={`/contatto`}>
+                  <span>{el.contatto}</span>
+                </Link>
+              )}
             </div>
           );
         })}

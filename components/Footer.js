@@ -61,8 +61,12 @@ const Footer = () => {
                 <Link className={styles.link} href={`/chi-sono`}>
                   <span>{el.chisono}</span>
                 </Link>
-                <span>{el.attivitaeworkshop}</span>
-                <span>{el.contatto}</span>
+                <Link className={styles.link} href={`/attivita-workshop`}>
+                  <span>{el.attivitaeworkshop}</span>
+                </Link>
+                <Link className={styles.link} href={`/contatto`}>
+                  <span>{el.contatto}</span>
+                </Link>
               </div>
             );
           })}

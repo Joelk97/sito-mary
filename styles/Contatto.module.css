@@ -8,6 +8,10 @@
   min-height: 100%;
   background: #f5edd3;
 }
+.link {
+  color: #000000;
+  text-decoration: none;
+}
 .section {
   width: 100%;
   height: fit-content;
@@ -22,21 +26,38 @@
   text-align: center;
   margin-bottom: 4rem;
 }
-.chiSonoImage {
-  position: relative;
-  width: 100vw;
-  height: 70vw;
-}
+
 .section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 6rem;
 }
-.section2 p {
-  font-size: 22px;
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Futura";
   font-style: normal;
   font-weight: 400;
-  width: 80%;
+  font-size: 22px;
+}
+.telEmail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4rem 0;
+}
+.tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
 }
