@@ -1,0 +1,65 @@
+.navbar {
+  height: 128px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  font-family: "Futura";
+  color: #000000;
+  font-size: 18px;
+  background: #f5edd3;
+}
+.navEl {
+  display: flex;
+  flex-direction: row;
+  grid-row: 1/2;
+  grid-column: 2/7;
+  justify-content: left;
+  align-items: center;
+}
+.navEl span {
+  padding: 10px 30px;
+  border: solid 2px #f5edd3;
+  display: block;
+  background: #f5edd3;
+  background: linear-gradient(to right, #8f8b46 50%, #f5edd3 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.navEl span:hover {
+  cursor: pointer;
+  background-position: left bottom;
+}
+.navLang {
+  display: flex;
+  flex-direction: row;
+  grid-row: 1/2;
+  grid-column: 8/-2;
+  justify-content: right;
+  align-items: center;
+}
+.languages {
+  color: #000000;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+.link {
+  color: #000000;
+  text-decoration: none;
+}
+.active {
+  color: #8f8b46;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+.languages:hover {
+  background: #8f8b46;
+}
+
+@media screen and (max-width: 1060px) {
+  .navbar {
+    font-size: 14px;
+  }
+  .navEl {
+    grid-column: 2/8;
+  }
+}

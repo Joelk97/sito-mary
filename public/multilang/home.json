@@ -1,0 +1,25 @@
+{
+  "navbar": [
+    {
+      "locale": "it",
+      "home": "Home",
+      "chisono": "Chi sono",
+      "attivitaeworkshop": "Attività e workshop",
+      "contatto": "Contatto"
+    },
+    {
+      "locale": "fr",
+      "home": "Home",
+      "chisono": "A propos de moi",
+      "attivitaeworkshop": "Activités et ateliers",
+      "contatto": "Contact"
+    },
+    {
+      "locale": "en",
+      "home": "Home",
+      "chisono": "About me",
+      "attivitaeworkshop": "Activities and workshops",
+      "contatto": "Contact"
+    }
+  ]
+}

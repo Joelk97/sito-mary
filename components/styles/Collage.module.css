@@ -1,0 +1,27 @@
+.container {
+  width: 500px;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+.image1 {
+  position: absolute;
+  width: 450px;
+  height: 330px;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  top: 200px;
+  left: 300px;
+}
+.image3 {
+  position: absolute;
+  width: 270px;
+  height: 220px;
+  bottom: 0px;
+  left: 50px;
+}
