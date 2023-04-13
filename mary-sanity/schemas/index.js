@@ -5,6 +5,8 @@ import Text from './locale/Text'
 import blockContent from './blockContent'
 import homePage from './homePage'
 import descrizioniOfferte from './descrizioniOfferte'
+import articlesActivities from './articlesActivities'
+import authors from './authors'
 
 export const schemaTypes = [
   homePage,
@@ -14,4 +16,6 @@ export const schemaTypes = [
   String,
   Text,
   descrizioniOfferte,
+  articlesActivities,
+  authors,
 ]

@@ -24,6 +24,11 @@ export default defineConfig({
                   .schemaType('homePage')
                   .id('23129998-2a0c-428e-87c9-b560326cee6c')
               ),
+            S.listItem()
+              .title('Articoli Attività')
+              .child(
+                S.documentList().title('Articoli Attività').filter('_type == "articlesActivities"')
+              ),
           ]),
     }),
     visionTool(),

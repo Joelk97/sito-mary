@@ -56,11 +56,11 @@ export default function Home({ homeElements }) {
           </div>
         </section>
         <section className={`${styles.section} ${styles.section2}`}>
-          <Carousel />
+          <Carousel activities={homeElements.offredActivities} />
         </section>
         <section className={`${styles.section} ${styles.section3}`}>
           <h1 className={`${styles.titleSection} ${styles.titleSection3}`}>
-            Novità e workshop
+            {homeElements.titleActivitiesandWorkshops?.[locale]}
           </h1>
           <div className={`${styles.cardsSection3} ${styles.cards}`}>
             <Card

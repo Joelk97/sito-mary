@@ -25,6 +25,27 @@ export default defineType({
         },
       ],
     }),
+    defineField({
+      title: 'Titolo Attività e Workshop',
+      name: 'titleActivitiesandWorkshops',
+      type: 'localeString',
+    }),
+    defineField({
+      title: 'Articoli priam pagina',
+      name: 'articlesHomePage',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {
+              type: 'articlesActivities',
+            },
+          ],
+        },
+      ],
+      validation: (Rule) => Rule.max(3),
+    }),
   ],
   preview: {
     select: {
