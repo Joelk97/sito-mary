@@ -25,3 +25,26 @@
   bottom: 0px;
   left: 50px;
 }
+@media screen and (max-width: 600px) {
+  .container {
+    scale: 0.7;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container {
+    scale: 0.5;
+  }
+}
+@media screen and (max-width: 355px) {
+  .image2 {
+    left: 200px;
+  }
+  .image3 {
+    left: 10px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container {
+    scale: 0.4;
+  }
+}

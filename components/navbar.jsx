@@ -2,17 +2,50 @@ import styles from "./styles/Nav.module.css";
 import homeEl from "../public/multilang/home.json";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import Image from "next/legacy/image";
 
 const Navbar = (props) => {
   const { locale, locales, asPath } = useRouter();
+  const [active, setActive] = useState(false);
+  const [windowSize, setWindowSize] = useState({
+    innerWidth: 700,
+    innerHeight: 700,
+  });
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize(getWindowSize());
+    };
+    handleWindowResize();
+    window.addEventListener("resize", handleWindowResize);
 
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
   return (
     <nav className={styles.navbar}>
+      <div style={{ zIndex: "11" }} className={styles.burgerIco}>
+        <Image
+          onClick={() => setActive(!active)}
+          src="/burgerIco.svg"
+          width="50"
+          height="50"
+          alt="Burger icon"
+        />
+      </div>
       {homeEl.navbar
         .filter((l) => l.locale == locale)
         .map((el, i) => {
           return (
-            <div key={i} className={styles.navEl}>
+            <div
+              key={i}
+              className={
+                active
+                  ? [styles.active, styles.navEl].join(" ")
+                  : [styles.navEl]
+              }
+            >
               {!props.home && (
                 <Link className={styles.link} href={`/`}>
                   <span>{el.home}</span>
@@ -70,5 +103,9 @@ const Navbar = (props) => {
     </nav>
   );
 };
+function getWindowSize() {
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
+}
 
 export default Navbar;

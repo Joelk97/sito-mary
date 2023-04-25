@@ -274,9 +274,24 @@
     margin-right: 5%;
     align-self: flex-end;
   }
-}
-@media screen and (max-width: 830px) {
   .footerNav {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .formContainer input,
+  .formContainer button {
+    font-size: 12px;
+    height: 42px;
+  }
+  .contactMeFooter h1 {
+    font-size: 42px;
+  }
+  .formContainer {
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .logoSection5 {
+    scale: 0.8;
   }
 }
