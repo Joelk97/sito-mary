@@ -152,7 +152,7 @@
   background: #f5edd3;
   font-family: "Futura";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   text-align: center;
 }
@@ -163,7 +163,7 @@
   background: #8f8b46;
   font-family: "Futura";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
 }
 .formContainer button:hover {
@@ -310,6 +310,9 @@
   .textSection5 {
     width: 90%;
     scale: 0.8;
+  }
+  .formContainer {
+    width: 98%;
   }
 }
 @media screen and (max-width: 330px) {
