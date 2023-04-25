@@ -284,6 +284,12 @@
     font-size: 12px;
     height: 42px;
   }
+  .cards {
+    gap: 0;
+  }
+  .titleSection {
+    font-size: 58px;
+  }
   .contactMeFooter h1 {
     font-size: 42px;
   }
@@ -293,5 +299,38 @@
   }
   .logoSection5 {
     scale: 0.8;
+  }
+  .textHeader {
+    scale: 0.8;
+    top: calc(200px + 5vw);
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .textSection5 {
+    width: 90%;
+    scale: 0.8;
+  }
+}
+@media screen and (max-width: 330px) {
+  .textHeader {
+    scale: 0.7;
+    top: calc(150px + 5vw);
+    padding: 20px;
+  }
+  .textHeader h1 {
+    font-size: 36px;
+  }
+  .textHeader h2 {
+    font-size: 28px;
+  }
+  .formContainer input,
+  .formContainer button {
+    font-size: 10px;
+    height: 36px;
+  }
+  .formContainer {
+    row-gap: 5px;
+    column-gap: 5px;
   }
 }

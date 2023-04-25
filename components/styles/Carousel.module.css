@@ -71,3 +71,26 @@
 .right {
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .titleHor {
+    transform: rotate(0deg);
+  }
+  .image {
+    width: 300px;
+    height: 250px;
+  }
+  .textes {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .image {
+    width: 250px;
+    height: 190px;
+  }
+}
