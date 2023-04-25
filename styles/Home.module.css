@@ -141,7 +141,8 @@
 .formContainer {
   width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -283,7 +284,6 @@
   .formContainer button {
     font-size: 12px;
     height: 42px;
-    scale: 0.9;
   }
   .cards {
     gap: 0;
@@ -313,7 +313,7 @@
     scale: 0.8;
   }
   .formContainer {
-    width: 98%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 330px) {
@@ -332,11 +332,9 @@
   .formContainer button {
     font-size: 10px;
     height: 36px;
-    scale: 0.8;
   }
   .formContainer {
     row-gap: 5px;
     column-gap: 5px;
-    scale: 0.8;
   }
 }

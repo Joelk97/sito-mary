@@ -40,15 +40,15 @@ const Footer = () => {
             id="email"
             required
           ></input>
-          <button>Invia</button>
           <input
-            style={{ gridColumn: "1/4" }}
+            style={{ gridColumn: "1/3" }}
             id="messaggio"
             placeholder="messaggio"
             name="messaggio"
             value={messaggio}
             onChange={(e) => setMessaggio(e.target.value)}
-          ></input>
+          ></input>{" "}
+          <button>Invia</button>
         </form>
         <h2 className={styles.copyright}>© Copyright - 2023 Marylin Moggi</h2>
       </div>
