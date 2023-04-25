@@ -283,7 +283,6 @@
   .formContainer button {
     font-size: 12px;
     height: 42px;
-    font-weight: 100;
   }
   .cards {
     gap: 0;
@@ -333,5 +332,6 @@
   .formContainer {
     row-gap: 5px;
     column-gap: 5px;
+    scale: 0.8;
   }
 }
