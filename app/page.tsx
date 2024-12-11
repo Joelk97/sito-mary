@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import bgImage from "../public/bg_placeholder.jpg";
 import "../app/globals.css";
 
